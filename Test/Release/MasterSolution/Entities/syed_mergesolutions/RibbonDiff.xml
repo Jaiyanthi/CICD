@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_mergesolutions.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.syed_mergesolutions.AddExistingAssoc" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_mergesolutions.AddExistingStandard.Hide" Location="Mscrm.SubGrid.syed_mergesolutions.AddExistingStandard" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>
