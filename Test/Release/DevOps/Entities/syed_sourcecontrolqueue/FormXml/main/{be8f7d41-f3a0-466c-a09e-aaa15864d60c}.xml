@@ -273,13 +273,13 @@
                         </labels>
                         <control id="WebResource_WebJobs" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
                           <parameters>
-                            <Url>syed_/HTML/SourceControlQueue/WebJobs</Url>
+                            <Url>syed_/HTML/SourceControlQueue.WebJobs</Url>
                             <PassParameters>true</PassParameters>
                             <ShowOnMobileClient>false</ShowOnMobileClient>
                             <Security>false</Security>
                             <Scrolling>auto</Scrolling>
                             <Border>true</Border>
-                            <WebResourceId>{9972C698-DC98-E911-A95F-000D3AF2C610}</WebResourceId>
+                            <WebResourceId>{0555C766-A2AF-E911-A960-000D3AF06091}</WebResourceId>
                           </parameters>
                         </control>
                         <events>

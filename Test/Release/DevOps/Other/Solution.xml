@@ -103,6 +103,7 @@
       <RootComponent type="60" id="{f646d0f5-96e4-4024-98e5-3e0b6f1e4f39}" behavior="0" />
       <RootComponent type="61" schemaName="syed_/HTML/DeploymentInstance" behavior="0" />
       <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue.WebJobs" behavior="0" />
       <RootComponent type="61" schemaName="syed_/Images/Submit-12" behavior="0" />
       <RootComponent type="61" schemaName="syed_/Images/Submit-32" behavior="0" />
       <RootComponent type="61" schemaName="syed_/Scripts/MergeSoluitons/EventHandler" behavior="0" />
@@ -128,47 +129,43 @@
         <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
+        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
+        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
         <Required key="0" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="ActivityFeedsCore (9.0.0.0)" />
         <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
-        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
-        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
-        <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
-        <Dependent key="4" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="6" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
-        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
-        <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
-        <Dependent key="1" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
         <Required key="7" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1907.2025)" />
-        <Dependent key="8" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="61" schemaName="syed_/HTML/SourceControlQueue/WebJobs" displayName="syed_/HTML/SourceControlQueue/WebJobs" solution="Active" />
         <Dependent key="8" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
       </MissingDependency>
     </MissingDependencies>
