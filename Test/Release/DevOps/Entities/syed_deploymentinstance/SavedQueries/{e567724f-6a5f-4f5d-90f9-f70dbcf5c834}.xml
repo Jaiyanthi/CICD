@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e567724f-6a5f-4f5d-90f9-f70dbcf5c834}</savedqueryid>
+    <layoutxml>
+      <grid name="syed_deploymentinstances" jump="syed_name" select="1" icon="1" preview="1">
+        <row name="syed_deploymentinstance" id="syed_deploymentinstanceid">
+          <cell name="syed_instanceurl" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="syed_name" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="syed_deploymentinstance">
+          <attribute name="syed_name" />
+          <order attribute="syed_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="syed_instanceurl" />
+          <attribute name="syed_deploymentinstanceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Deployment Instance Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

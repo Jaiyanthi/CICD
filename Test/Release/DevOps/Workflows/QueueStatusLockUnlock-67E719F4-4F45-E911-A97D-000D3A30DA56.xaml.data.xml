@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{67e719f4-4f45-e911-a97d-000d3a30da56}" Name="Queue Status Lock / Unlock" Description="Click to add description">
+  <XamlFileName>/Workflows/QueueStatusLockUnlock-67E719F4-4F45-E911-A97D-000D3A30DA56.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>syed_sourcecontrolqueue</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Queue Status Lock / Unlock" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{7a00e302-5045-e911-a97d-000d3a30da56}">
+      <controltype>1</controltype>
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <controlname>syed_status</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{7b00e302-5045-e911-a97d-000d3a30da56}">
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>
