@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="syed.ApplicationRibbon.CheckIn.Button.CustomAction" Location="Mscrm.BasicHomeTab.Tools.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:syed.ApplicationRibbon.CheckIn.Button.Alt" Command="syed.ApplicationRibbon.CheckIn.Command" Id="syed.ApplicationRibbon.CheckIn.Button" Image32by32="$webresource:syed_/Images/Submit-32" Image16by16="$webresource:syed_/Images/Submit-12" LabelText="$LocLabels:syed.ApplicationRibbon.CheckIn.Button.LabelText" Sequence="15" TemplateAlias="o1" ToolTipTitle="$LocLabels:syed.ApplicationRibbon.CheckIn.Button.ToolTipTitle" ToolTipDescription="$LocLabels:syed.ApplicationRibbon.CheckIn.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="syed.ApplicationRibbon.Release.Button.CustomAction" Location="Mscrm.BasicHomeTab.Tools.Controls._children" Sequence="25">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:syed.ApplicationRibbon.Release.Button.Alt" Command="syed.ApplicationRibbon.Release.Command" Id="syed.ApplicationRibbon.Release.Button" Image32by32="$webresource:syed_/Images/Submit-32" Image16by16="$webresource:syed_/Images/Submit-12" LabelText="$LocLabels:syed.ApplicationRibbon.Release.Button.LabelText" Sequence="25" TemplateAlias="o1" ToolTipTitle="$LocLabels:syed.ApplicationRibbon.Release.Button.ToolTipTitle" ToolTipDescription="$LocLabels:syed.ApplicationRibbon.Release.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="syed.ApplicationRibbon.CheckIn.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="syed.ApplicationRibbon.CheckIn.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SYED.Solution.Ribbon.Execute" Library="$webresource:syed_/Scripts/Solution/Ribbon">
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Check-In" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="syed.ApplicationRibbon.Release.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="syed.ApplicationRibbon.CheckIn.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SYED.Solution.Ribbon.Execute" Library="$webresource:syed_/Scripts/Solution/Ribbon">
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Release" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="syed.ApplicationRibbon.CheckIn.DisplayRule">
+        <PageRule Address="/tools/Solution/home_solution.aspx" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="syed.ApplicationRibbon.CheckIn.Button.Alt">
+      <Titles>
+        <Title description="Check In" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.CheckIn.Button.LabelText">
+      <Titles>
+        <Title description="Check In" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.CheckIn.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Check In" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.CheckIn.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Check In" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.Release.Button.Alt">
+      <Titles>
+        <Title description="Release" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.Release.Button.LabelText">
+      <Titles>
+        <Title description="Release" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.Release.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Release" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.ApplicationRibbon.Release.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Release" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

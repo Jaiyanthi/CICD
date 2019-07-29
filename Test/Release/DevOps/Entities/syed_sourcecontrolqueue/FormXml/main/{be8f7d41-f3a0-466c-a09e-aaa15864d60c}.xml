@@ -148,11 +148,27 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{de996887-8e44-a39b-b892-c10941566610}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="CheckInBySolution" languagecode="1033" />
+                        </labels>
+                        <control id="syed_checkinbysolution" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_checkinbysolution" disabled="false" uniqueid="{9dc054a9-d737-1720-9851-ec05229cc38b}" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{074a6da7-2b4a-1406-bc3e-410c89dde3d2}" showlabel="true" locklevel="0" visible="false">
                         <labels>
                           <label description="Commit Ids" languagecode="1033" />
                         </labels>
                         <control disabled="false" id="syed_commitids" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_commitids" uniqueid="{16de16e7-485e-87a6-8ab2-933b565c21ee}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5127761b-8c1a-97e3-47b7-922435c9a775}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="CheckInBySolutionId" languagecode="1033" />
+                        </labels>
+                        <control id="syed_checkinbysolutionid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_checkinbysolutionid" disabled="false" uniqueid="{3ac98193-3d7d-6a4e-deb1-6bbde473aca0}" />
                       </cell>
                     </row>
                   </rows>
