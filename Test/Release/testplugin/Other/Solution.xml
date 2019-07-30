@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.7219" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>testplugin</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="test plugin" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>syedamrullahmazharpublisher</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Syed Amrullah Mazhar publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>syed</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>43371</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="processsession" behavior="2" />
+      <RootComponent type="1" schemaName="syed_configurationsettings" behavior="0" />
+      <RootComponent type="1" schemaName="syed_deploymentinstance" behavior="0" />
+      <RootComponent type="1" schemaName="syed_mastersolutions" behavior="0" />
+      <RootComponent type="1" schemaName="syed_mergesolutions" behavior="0" />
+      <RootComponent type="1" schemaName="syed_solutiondetail" behavior="0" />
+      <RootComponent type="1" schemaName="syed_sourcecontrolqueue" behavior="0" />
+      <RootComponent type="1" schemaName="syncerror" behavior="2" />
+      <RootComponent type="29" id="{034b1e2b-0da3-e911-a95a-000d3af06cd4}" behavior="0" />
+      <RootComponent type="29" id="{18e1cc76-16fe-43cc-a669-b30018933847}" behavior="0" />
+      <RootComponent type="29" id="{49c12765-897c-e911-a95d-000d3af2cb54}" behavior="0" />
+      <RootComponent type="29" id="{542651b9-0033-e911-a97b-000d3a30da56}" behavior="0" />
+      <RootComponent type="29" id="{67e719f4-4f45-e911-a97d-000d3a30da56}" behavior="0" />
+      <RootComponent type="29" id="{908bcb02-dda2-e911-a95a-000d3af06cd4}" behavior="0" />
+      <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
+      <RootComponent type="60" id="{41b7ee8a-72a4-e911-a979-000d3af0375c}" behavior="0" />
+      <RootComponent type="60" id="{dbaf6621-b57a-4f9d-b39d-60d5e5285113}" />
+      <RootComponent type="60" id="{e2cdef28-6f1d-4b3a-98d5-35dab32ff20f}" />
+      <RootComponent type="61" schemaName="syed_/HTML/DeploymentInstance" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue.WebJobs" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Commit-16" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Commit-32" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Release-16" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Release-32" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Submit-12" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Submit-32" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/MergeSoluitons/EventHandler" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/Solution/Ribbon" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/SolutionDetails/EventHandler" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/SourceControlQueue/EventHandler" behavior="0" />
+      <RootComponent type="91" id="{6f501261-1881-4ce9-a46b-56aa7e82a494}" schemaName="SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" behavior="0" />
+      <RootComponent type="92" id="{426589a4-e690-e911-a95d-000d3af2c610}" behavior="0" />
+      <RootComponent type="92" id="{65578626-11b2-e911-a97f-000d3af04fc2}" behavior="0" />
+      <RootComponent type="92" id="{835ad210-f981-e911-a95c-000d3af266c5}" behavior="0" />
+      <RootComponent type="92" id="{a5acba6b-e690-e911-a95d-000d3af2c610}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
+        <Dependent key="1" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="1" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
+        <Dependent key="3" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="1" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="MicrosoftDynamicsScheduling (3.9.0.42)" />
+        <Dependent key="3" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="GuidedHelp (1.2.0.2)" />
+        <Dependent key="6" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="6" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="MicrosoftDynamicsScheduling (3.9.0.42)" />
+        <Dependent key="1" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="5" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="MicrosoftDynamicsScheduling (3.9.0.42)" />
+        <Dependent key="6" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="1" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="YammerIntegration (9.0.1.098)" />
+        <Dependent key="3" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="6" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="3" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="AppforOutlook (1.2.13.0)" />
+        <Dependent key="6" type="50" schemaName="syed_sourcecontrolqueue:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="50" schemaName=":RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" solution="ActivityFeedsCore (9.0.0.0)" />
+        <Dependent key="3" type="50" schemaName="syed_solutiondetail:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1907.3021)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
