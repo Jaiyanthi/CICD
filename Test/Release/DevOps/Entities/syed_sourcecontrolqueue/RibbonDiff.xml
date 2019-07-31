@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <HideCustomAction HideActionId="syed.GuidedHelp.syed_sourcecontrolqueue.Form.Hide" Location="GuidedHelp.syed_sourcecontrolqueue.Form" />
+    <HideCustomAction HideActionId="syed.LPLibrary.syed_sourcecontrolqueue.Form.Hide" Location="LPLibrary.syed_sourcecontrolqueue.Form" />
+    <HideCustomAction HideActionId="syed.MailApp.Form.SetRegarding.syed_sourcecontrolqueue.Button.Hide" Location="MailApp.Form.SetRegarding.syed_sourcecontrolqueue.Button" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Activate.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Activate" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.AddConnection.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.AddConnection" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.AddConnectionNew.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.AddConnectionNew" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.AddConnectionToMe.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.AddConnectionToMe" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.AddOtherActivities.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.AddOtherActivities" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.AddToQueue.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.AddToQueue" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Assign.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Assign" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Convert.Case.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Convert.Case" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Convert.Opportunity.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Convert.Opportunity" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Deactivate.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Deactivate" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.FollowButton.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.FollowButton" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.FollowButtonForYammer.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.FollowButtonForYammer" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Permissions.Grant.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Permissions.Grant" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Permissions.GrantNonRefresh.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Permissions.GrantNonRefresh" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Permissions.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Permissions" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Permissions.Sharing.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Permissions.Sharing" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Permissions.SharingNonRefresh.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Permissions.SharingNonRefresh" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.PromoteToResponse.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.PromoteToResponse" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.QueueItemDetail.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.QueueItemDetail" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.Reports.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.Reports" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.RunScript.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.RunScript" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.RunWorkflow.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.RunWorkflow" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.SaveAsComplete.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.SaveAsComplete" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.SendSelected.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.SendSelected" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.SuggestProduct.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.SuggestProduct" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.UnfollowButton.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.UnfollowButton" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.ViewHierarchy.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.ViewHierarchy" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_sourcecontrolqueue.WordTemplate.Hide" Location="Mscrm.Form.syed_sourcecontrolqueue.WordTemplate" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.Activate.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.Activate" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.AddEmail.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.AddEmail" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.AddToQueue.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.AddToQueue" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.AdvMergeRecords.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.AdvMergeRecords" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.Assign.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.Assign" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.Charts.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.Charts" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.CopySelected.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.CopySelected" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.Deactivate.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.Deactivate" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.FollowButton.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.FollowButton" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.MailMerge.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.MailMerge" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.RunScript.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.RunScript" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.RunWorkflow.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.RunWorkflow" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.SendSelected.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.SendSelected" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.Sharing.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.Sharing" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_sourcecontrolqueue.UnfollowButton.Hide" Location="Mscrm.SubGrid.syed_sourcecontrolqueue.UnfollowButton" />
+    <HideCustomAction HideActionId="syed.msdyn.ApplicationRibbon.syed_sourcecontrolqueue.Form.BookResource.Button.Hide" Location="msdyn.ApplicationRibbon.syed_sourcecontrolqueue.Form.BookResource.Button" />
+    <HideCustomAction HideActionId="syed.msdyn.ApplicationRibbon.syed_sourcecontrolqueue.SubGrid.BookResource.Button.Hide" Location="msdyn.ApplicationRibbon.syed_sourcecontrolqueue.SubGrid.BookResource.Button" />
+    <CustomAction Id="syed.syed_sourcecontrolqueue.MergeSolutions.Button.CustomAction" Location="Mscrm.Form.syed_sourcecontrolqueue.MainTab.Save.Controls._children" Sequence="120">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:syed.syed_sourcecontrolqueue.MergeSolutions.Button.Alt" Command="syed.syed_sourcecontrolqueue.Submit.Command" Id="syed.syed_sourcecontrolqueue.MergeSolutions.Button" Image32by32="$webresource:syed_/Images/Submit-32" Image16by16="$webresource:syed_/Images/Submit-12" LabelText="$LocLabels:syed.syed_sourcecontrolqueue.MergeSolutions.Button.LabelText" Sequence="120" TemplateAlias="o1" ToolTipTitle="$LocLabels:syed.syed_sourcecontrolqueue.MergeSolutions.Button.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="syed.syed_sourcecontrolqueue.Refresh.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SYED.SourceControlQueue.EventHandler.RefreshPage" Library="$webresource:syed_/Scripts/SourceControlQueue/EventHandler">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="syed.syed_sourcecontrolqueue.Submit.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SYED.SourceControlQueue.EventHandler.ShowHideMergeButton" Library="$webresource:syed_/Scripts/SourceControlQueue/EventHandler">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="syed.syed_sourcecontrolqueue.MergeSolutions.Button.Alt">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.syed_sourcecontrolqueue.MergeSolutions.Button.LabelText">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.syed_sourcecontrolqueue.MergeSolutions.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Submit" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>
