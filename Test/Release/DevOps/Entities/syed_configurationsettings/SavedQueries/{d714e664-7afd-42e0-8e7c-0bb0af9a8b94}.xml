@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d714e664-7afd-42e0-8e7c-0bb0af9a8b94}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="syed_name" select="1" icon="1" preview="1">
+        <row name="result" id="syed_configurationsettingsid">
+          <cell name="syed_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="syed_configurationsettings">
+          <attribute name="syed_configurationsettingsid" />
+          <attribute name="syed_name" />
+          <attribute name="createdon" />
+          <order attribute="syed_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Configuration Settings Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

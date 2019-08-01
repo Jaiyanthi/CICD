@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b6f5ce40-f176-e911-a95e-000d3af2c9d4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="syed_name" select="1" preview="1" icon="1">
+        <row id="syed_mastersolutionsid" name="result">
+          <cell name="syed_name" width="100" />
+          <cell name="syed_listofsolutions" width="100" disableSorting="1" />
+          <cell name="syed_publisher" width="100" />
+          <cell name="syed_version" width="100" />
+          <cell name="syed_solutioninstalledon" width="100" />
+          <cell name="syed_ismanaged" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="syed_mastersolutions">
+          <order attribute="syed_publisher" descending="false" />
+          <attribute name="syed_publisher" />
+          <attribute name="syed_ismanaged" />
+          <attribute name="syed_name" />
+          <attribute name="syed_version" />
+          <attribute name="syed_listofsolutions" />
+          <attribute name="syed_solutioninstalledon" />
+          <attribute name="syed_mastersolutionsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Master Solution" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
