@@ -1,0 +1,47 @@
+<html><head>
+    <style>
+        /* Style all input fields */
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: Segoe\000020UI,Tahoma,Arial;
+        }
+    </style>
+    <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        // When the user clicks outside of the password field, hide the message box
+        function myInput_onblur() {
+            var myInput = document.getElementById("psw");
+            window.parent.Xrm.Page.getAttribute("syed_password").setValue(myInput.value);
+        }
+
+        function loadDeploymentInstance() {
+            var password = window.parent.Xrm.Page.getAttribute("syed_password").getValue();
+            document.getElementById("psw").value = password;
+        }
+    </script>
+<meta><meta><meta></head>
+<body onload="loadDeploymentInstance();" onfocusout="parent.setEmailRange();" style="overflow-wrap: break-word;">
+    <div id="div_Password">
+        <table style="width: 100%">
+            <tbody><tr>
+                <td style="padding-left:0px; padding-right:0px; position:relative; ">
+                    <label style="color: #828181 !important;font-size: 14px;font-family: Segoe\000020UI,Tahoma,Arial; ">
+                        Password
+                    </label>
+                    <label style="color:red; padding-top:0px">
+                        *
+                    </label>
+                </td>
+
+                <td style="padding-left:0px; word-wrap: break-word;vertical-align:top;font-weight : normal;">
+                    <input type="password" id="psw" name="pwd" onchange="myInput_onblur()" style="width:100%" required="">
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+
+</body></html>

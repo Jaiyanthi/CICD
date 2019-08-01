@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{d4e4babb-a85b-4407-8e35-98a17c9bbf18}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{06c5ebcf-e6b9-4880-ad3d-3c00368ee1c8}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2c5dd0f9-3bb3-4b83-94e7-2752f7c0d782}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fe1a67bc-de45-44be-abfa-95bd21212912}">
+                        <labels>
+                          <label description="Configuration Key" languagecode="1033" />
+                        </labels>
+                        <control id="syed_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3c37690b-5f4c-40ad-bb2a-cfba13a6b2f3}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>
