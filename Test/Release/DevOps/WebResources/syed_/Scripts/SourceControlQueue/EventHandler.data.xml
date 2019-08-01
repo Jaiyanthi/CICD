@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{d6631a89-f476-e911-a95e-000d3af2c9d4}</WebResourceId>
+  <Name>syed_/Scripts/SourceControlQueue/EventHandler</Name>
+  <DisplayName>syed_/Scripts/SourceControlQueue/EventHandler</DisplayName>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/syed_ScriptsSourceControlQueueEventHandlerD6631A89-F476-E911-A95E-000D3AF2C9D4</FileName>
+</WebResource>
