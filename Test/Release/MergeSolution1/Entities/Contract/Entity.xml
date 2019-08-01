@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Name LocalizedName="Contract" OriginalName="Contract">Contract</Name>
+  <EntityInfo>
+    <entity Name="Contract" unmodified="1">
+      <attributes />
+    </entity>
+  </EntityInfo>
+  <FormXml />
+  <RibbonDiffXml />
+</Entity>
