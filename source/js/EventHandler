@@ -1,17 +1,105 @@
 if (typeof (SYED) === "undefined") {
     SYED = { __namespace: true };
 }
-if (typeof (SYED.SolutionDetail) === "undefined") {
-    SYED.SolutionDetail = { __namespace: true };
+if (typeof (SYED.SourceControlQueue) === "undefined") {
+    SYED.SourceControlQueue = { __namespace: true };
 }
 
 'use strict';
-SYED.SolutionDetail.EventHandler =
+SYED.SourceControlQueue.EventHandler =
     {
+        ShowHideSolutionDetailsSections: function (executionContext) {
+            try {
+                var formContext = executionContext.getFormContext();
+                var HTMLSection = formContext.ui.tabs.get("Reference");
+
+                var formType = formContext.ui.getFormType();
+                if (formType != "1") {
+                    SYED.SourceControlQueue.EventHandler.ShowHideHTML(formContext, HTMLSection);
+                    formContext.ui.tabs.get("MergeSolutions").setVisible(true);
+                    formContext.ui.tabs.get("General").setVisible(true);
+                    formContext.ui.tabs.get("Deployment_Details").sections.get("InstanceDetails").setVisible(true);
+                }
+                else {
+                    formContext.ui.tabs.get("MergeSolutions").setVisible(false);
+ formContext.ui.tabs.get("Reference").setVisible(false);
+                    formContext.ui.tabs.get("General").setVisible(false);
+                    formContext.ui.tabs.get("Deployment_Details").sections.get("InstanceDetails").setVisible(false);
+                    formContext.getAttribute("syed_name").setValue("SOL-" + new Date().toLocaleString());
+                }
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.ShowHideSolutionDetailsSections function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        ShowHideHTML: function (formContext, HTMLSection) {
+            try {
+                var commitID = formContext.getAttribute("syed_commitids").getValue();
+                if (commitID !== "" && commitID !== null) {
+                    HTMLSection.setVisible(true);
+                } else {
+                    HTMLSection.setVisible(false);
+                }
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.RefreshPage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        RefreshPage: function (executionContext) {
+            try {
+                var formContext = null;
+
+                if (Xrm.Internal.isUci())
+                    formContext = executionContext;
+                else
+                    formContext = executionContext.getFormContext();
+
+                var entityFormOptions = {};
+                entityFormOptions["entityName"] = formContext.data.entity.getEntityName();
+                entityFormOptions["entityId"] = formContext.data.entity.getId();
+               
+                Xrm.Navigation.openForm(entityFormOptions);
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.RefreshPage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
+        SavePage: function (executionContext) {
+            try {
+                var formContext = null;
+
+                if (Xrm.Internal.isUci())
+                    formContext = executionContext;
+                else
+                    formContext = executionContext.getFormContext();
+
+                formContext.data.save().then(
+                    function () {
+                        SYED.SourceControlQueue.EventHandler.RefreshPage(executionContext);
+                    },
+                    function (error) {
+                        Xrm.Navigation.openAlertDialog(error.message);
+                    });
+
+            }
+            catch (ex) {
+                console.log("Error at SYED.SourceControlQueue.EventHandler.SavePage function: " + ex.message + "|" + "Stack: " + ex.stack);
+                throw ex;
+            }
+        },
+
         OnRowSelected: function (executionContext) {
             try {
                 executionContext.getFormContext().getData().getEntity().attributes.forEach(function (attr) {
-                    if (attr.getName() !== "syed_order" && attr.getName() !== "syed_newversion") {
+                    if (attr.getName() !== "syed_order" && attr.getName() !== "syed_newversion" && attr.getName() !== "syed_exportas") {
                         attr.controls.forEach(function (c) {
                             c.setDisabled(true);
                         })
@@ -19,71 +107,91 @@ SYED.SolutionDetail.EventHandler =
                 });
             }
             catch (ex) {
-                console.log("Error at SYED.SolutionDetail.EventHandler.OnRowSelected function: " + ex.message + "|" + "Stack: " + ex.stack);
+                console.log("Error at SYED.SourceControlQueue.EventHandler.OnRowSelected function: " + ex.message + "|" + "Stack: " + ex.stack);
                 throw ex;
             }
         },
 
-        Execute: function (executionContext) {
+        CheckDeploymentInstance: function (executionContext, successCall, errorCall) {
             try {
-                var formContext = executionContext.getFormContext();
-                var formType = formContext.ui.getFormType();
+                var formContext = null;
 
-                if (formType == "1") {
-                    formContext.ui.tabs.get("MergeSolution").setVisible(false);
-                }
-                else {
-                    formContext.ui.tabs.get("MergeSolution").setVisible(true);
-                }
+                if (Xrm.Internal.isUci())
+                    formContext = executionContext;
+                else
+                    formContext = executionContext.getFormContext();
+
+                var sourceControlQueueId = formContext.data.entity.getId();
+                Xrm.WebApi.online.retrieveMultipleRecords("syed_deploymentinstance", "?$select=syed_instanceurl&$filter=_syed_dynamicssourcecontrol_value eq " + sourceControlQueueId + "").then(
+                    function success(results) {
+                        successCall(results);
+                    },
+                    function (error) {
+                        Xrm.Utility.alertDialog(error.message);
+                        errorCall(error);
+                    }
+                );
+
             }
             catch (ex) {
-                console.log("Error at SYED.SolutionDetail.EventHandler.Execute function: " + ex.message + "|" + "Stack: " + ex.stack);
+                console.log("Error at SYED.SourceControlQueue.EventHandler.CheckDeploymentInstance function: " + ex.message + "|" + "Stack: " + ex.stack);
                 throw ex;
             }
         },
 
-        SetSourcecontrolValues: function (executionContext) {
+        ShowHideMergeButton: function (executionContext) {
             try {
-                var formContext = executionContext.getFormContext();
-                var sourceControlValues = formContext.getAttribute("syed_crmsolutionsid").getValue();
-                if (sourceControlValues != null || sourceControlValues != undefined) {
-                    sourceControlValues = sourceControlValues[0].id.replace("{", "").replace("}", "").toUpperCase();
+                var formContext = null;
 
-                    Xrm.WebApi.online.retrieveRecord("syed_mastersolutions", sourceControlValues, "?$select=syed_friendlyname,syed_installedon,syed_ismanaged,syed_listofsolutions,syed_mastersolutionsid,syed_name,syed_order,syed_publisher,syed_solutionid,syed_solutioninstalledon,syed_version,syed_versionnumber").then(
-                        function success(result) {
-                            formContext.getAttribute("syed_friendlyname").setValue(result["syed_friendlyname"]);
-                            formContext.getAttribute("syed_ismanaged").setValue(result["syed_ismanaged"]);
-                            formContext.getAttribute("syed_name").setValue(result["syed_friendlyname"]);
-                            formContext.getAttribute("syed_publisher").setValue(result["syed_publisher"]);
-                            formContext.getAttribute("syed_solutioninstalledon").setValue(new Date(result["syed_solutioninstalledon"]));
-                            formContext.getAttribute("syed_listofsolutions").setValue(result["syed_listofsolutions"]);
-                            formContext.getAttribute("syed_version").setValue(result["syed_version"]);
-                            formContext.getAttribute("syed_solutionid").setValue(result["syed_solutionid"]);
-                            formContext.getAttribute("syed_name").setValue("SOL-" + new Date().toLocaleString());
-                            formContext.getAttribute("syed_order").setValue(0);
+                if (Xrm.Internal.isUci())
+                    formContext = executionContext;
+                else
+                    formContext = executionContext.getFormContext();
 
+                formContext.ui.clearFormNotification("SUBMIT");
+                var sourceControlQueueId = formContext.data.entity.getId();
+                var formType = formContext.ui.getFormType();
+
+                var checkIn = formContext.getAttribute("syed_checkin").getValue();
+
+                if (formType != "1") {
+                    Xrm.WebApi.online.retrieveMultipleRecords("syed_solutiondetail", "?$select=_syed_crmsolutionsid_value&$filter=_syed_listofsolutionid_value eq " + sourceControlQueueId + "").then(
+                        function success(results) {
+                            if (results.entities.length > 0) {
+                                if (checkIn) {
+                                    formContext.getAttribute("syed_status").setValue("Queued");
+                                    SYED.SourceControlQueue.EventHandler.SavePage(executionContext);
+                                }
+                                else {
+                                    SYED.SourceControlQueue.EventHandler.CheckDeploymentInstance(executionContext,
+                                        function (results) {
+                                            if (results.entities.length > 0) {
+                                                formContext.getAttribute("syed_status").setValue("Queued");
+                                                SYED.SourceControlQueue.EventHandler.SavePage(executionContext);
+                                            }
+                                            else {
+                                                formContext.ui.setFormNotification('To Submit, Please add Deployment Instance Details', 'ERROR', 'SUBMIT');
+                                            }
+                                        },
+                                        function (ex) {
+                                            console.log("Error at SYED.SourceControlQueue.EventHandler.ShowHideMergeButton function: " + ex.message + "|" + "Stack: " + ex.stack);
+                                            throw ex;
+                                        }
+                                    );
+                                }
+                            }
+                            else {
+                                formContext.ui.setFormNotification('To Submit, Please select Master Solution', 'ERROR', 'SUBMIT');
+                            }
                         },
                         function (error) {
                             Xrm.Utility.alertDialog(error.message);
                         }
                     );
                 }
-                else {
-                    if (!Xrm.Internal.isUci()) {
-                        formContext.getAttribute("syed_friendlyname").setValue("");
-                        formContext.getAttribute("syed_ismanaged").setValue("");
-                        formContext.getAttribute("syed_name").setValue("");
-                        formContext.getAttribute("syed_publisher").setValue("");
-                        formContext.getAttribute("syed_solutioninstalledon").setValue("");
-                        formContext.getAttribute("syed_listofsolutions").setValue("");
-                        formContext.getAttribute("syed_version").setValue("");
-                        formContext.getAttribute("syed_solutionid").setValue("");
-                        formContext.getAttribute("syed_order").setValue(0);
-                    }
-                }
             }
             catch (ex) {
-                console.log("Error at SYED.SolutionDetail.EventHandler.SetSourcecontrolValues function: " + ex.message + "|" + "Stack: " + ex.stack);
+                console.log("Error at SYED.SourceControlQueue.EventHandler.ShowHideMergeButton function: " + ex.message + "|" + "Stack: " + ex.stack);
                 throw ex;
             }
         }
