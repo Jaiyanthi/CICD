@@ -78,16 +78,14 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="account" behavior="1" />
-      <RootComponent type="1" schemaName="customeraddress" behavior="1" />
-      <RootComponent type="60" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-      <RootComponent type="60" id="{df5bef3a-9237-40bd-a27c-2cd7fd434706}" />
+      <RootComponent type="61" schemaName="syed_/HTML/DeploymentInstance" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/SourceControlQueue.WebJobs" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Configurationsettings" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Images/Configurationsettings-16" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/Solution/Ribbon" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/Scripts/SolutionDetails/EventHandler" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required key="0" type="60" displayName="Sales Insights" parentDisplayName="Account" solution="SICommon (9.0.2.161)" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-        <Dependent key="0" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
