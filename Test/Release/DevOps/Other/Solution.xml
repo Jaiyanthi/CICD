@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.7219" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.7617" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>DevOps</UniqueName>
     <LocalizedNames>
@@ -178,7 +178,7 @@
         <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1907.3021)" />
+        <Required key="7" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1907.4014)" />
         <Dependent key="8" type="60" displayName="Information" parentDisplayName="Dynamics Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
       </MissingDependency>
     </MissingDependencies>

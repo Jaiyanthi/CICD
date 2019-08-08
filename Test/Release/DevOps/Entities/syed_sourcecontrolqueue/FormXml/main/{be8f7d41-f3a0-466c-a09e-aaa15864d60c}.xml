@@ -14,7 +14,7 @@
           <columns>
             <column width="50%">
               <sections>
-                <section id="{7ee9a19c-b0d5-53b6-474e-393a4595c348}" name="Deployment_Details_Section" IsUserDefined="0" showlabel="false" locklevel="0" showbar="false" columns="1" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" layout="varwidth">
+                <section id="{7ee9a19c-b0d5-53b6-474e-393a4595c348}" name="Deployment_Details_Section" IsUserDefined="0" showlabel="false" locklevel="0" showbar="false" columns="1" labelwidth="140" celllabelalignment="Left" celllabelposition="Left" layout="varwidth">
                   <labels>
                     <label description="Deployment_Details_Section" languagecode="1033" />
                   </labels>
@@ -36,6 +36,14 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{11bce62a-4bd1-1610-4dc7-37b53c29c546}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Is Scheduled" languagecode="1033" />
+                        </labels>
+                        <control id="syed_isshedulled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_isshedulled" disabled="false" uniqueid="{14da2c2c-9938-9148-e85e-aad96ea48eed}" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{a39b0c60-42ae-c60a-79bc-03aecee1dee7}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Check In" languagecode="1033" />
@@ -44,23 +52,15 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a6cd732d-08d3-a9d7-0288-2c35a812376d}" showlabel="true" locklevel="0" visible="false">
+                      <cell id="{b25e6d07-0d73-b753-9a71-9485467c2150}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Remote Name" languagecode="1033" />
+                          <label description="Include In Release" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="syed_remotename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_remotename" uniqueid="{8052cb57-0c35-ccb2-d196-e28803930e22}" />
+                        <control disabled="false" id="syed_includeinrelease" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_includeinrelease" uniqueid="{18ed4571-a58c-bb6b-d935-87b16bd3c080}" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3ee98b61-15cc-7a8b-63d6-2bb0b26eb62a}" showlabel="true" locklevel="0" visible="false">
-                        <labels>
-                          <label description="Branch" languagecode="1033" />
-                        </labels>
-                        <control disabled="false" id="syed_branch" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_branch" uniqueid="{bdad16c2-5444-b32b-771c-73a484d3251c}" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{e15200b4-c74e-0053-bc32-14053d289405}" showlabel="true" locklevel="0" visible="false">
+                      <cell id="{e15200b4-c74e-0053-bc32-14053d289405}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Repository Url" languagecode="1033" />
                         </labels>
@@ -68,11 +68,19 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b25e6d07-0d73-b753-9a71-9485467c2150}" showlabel="true" locklevel="0">
+                      <cell id="{a6cd732d-08d3-a9d7-0288-2c35a812376d}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Include In Release" languagecode="1033" />
+                          <label description="Remote Name" languagecode="1033" />
                         </labels>
-                        <control disabled="false" id="syed_includeinrelease" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="syed_includeinrelease" uniqueid="{18ed4571-a58c-bb6b-d935-87b16bd3c080}" />
+                        <control disabled="false" id="syed_remotename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_remotename" uniqueid="{8052cb57-0c35-ccb2-d196-e28803930e22}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ee98b61-15cc-7a8b-63d6-2bb0b26eb62a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Branch" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="syed_branch" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_branch" uniqueid="{bdad16c2-5444-b32b-771c-73a484d3251c}" />
                       </cell>
                     </row>
                     <row>
@@ -89,13 +97,6 @@
                           <label description="Web Jobs" languagecode="1033" />
                         </labels>
                         <control disabled="false" id="syed_webjobs" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="syed_webjobs" uniqueid="{8dd38c3a-9aad-a689-808e-0d73b10791e0}" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{e175d549-d549-34b6-59ab-9cb201348b41}" showlabel="false" userspacer="true">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
                       </cell>
                     </row>
                   </rows>
