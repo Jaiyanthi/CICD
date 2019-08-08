@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0ccf8687-c1e8-4271-90db-1059641dc7ea}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="syed_name" select="1" icon="1" preview="1">
+        <row name="result" id="syed_sourcecontrolqueueid">
+          <cell name="syed_name" width="100" />
+          <cell name="syed_status" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="modifiedon" width="100" />
+          <cell name="syed_comment" width="100" />
+          <cell name="syed_repositoryurl" width="100" />
+          <cell name="syed_branch" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="syed_sourcecontrolqueue">
+          <order attribute="modifiedon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="syed_repositoryurl" />
+          <attribute name="syed_status" />
+          <attribute name="ownerid" />
+          <attribute name="syed_comment" />
+          <attribute name="syed_branch" />
+          <attribute name="modifiedon" />
+          <attribute name="syed_name" />
+          <attribute name="syed_sourcecontrolqueueid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Source Control Queues" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
