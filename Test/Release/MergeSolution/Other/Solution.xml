@@ -3,10 +3,10 @@
   <SolutionManifest>
     <UniqueName>MergeSolution</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="MergeSolution" languagecode="1033" />
+      <LocalizedName description="Merge Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0</Version>
+    <Version>1.0.0.0</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>syedamrullahmazharpublisher</UniqueName>
@@ -79,15 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="2" />
-      <RootComponent type="1" schemaName="customeraddress" behavior="2" />
-      <RootComponent type="60" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-      <RootComponent type="60" id="{df5bef3a-9237-40bd-a27c-2cd7fd434706}" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required key="0" type="60" displayName="Sales Insights" parentDisplayName="Account" solution="SICommon (9.0.2.161)" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-        <Dependent key="0" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
