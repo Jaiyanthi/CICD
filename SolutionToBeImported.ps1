@@ -1,4 +1,7 @@
-﻿param(
+﻿#
+# Filename: SolutionToBeImported.ps1.
+#
+param(
 $solutionListFile
 )
         foreach($solution in [System.IO.File]::ReadLines($solutionListFile)){

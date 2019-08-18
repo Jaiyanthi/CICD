@@ -1,5 +1,5 @@
 ﻿#
-# Filename: ImportSolution.ps1
+# Filename: ImportSolution.ps1.
 #
 param(
 $solutionListFile,

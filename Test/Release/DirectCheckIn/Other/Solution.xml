@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.7617" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.8018" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>DirectCheckIn</UniqueName>
     <LocalizedNames>
@@ -80,6 +80,9 @@
     <RootComponents>
       <RootComponent type="1" schemaName="competitor" behavior="2" />
       <RootComponent type="60" id="{940c7b69-3a65-46c5-b6e9-cb66d95c93d9}" />
+      <RootComponent type="61" schemaName="syed_/HTML/a.html" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/b.html" behavior="0" />
+      <RootComponent type="61" schemaName="syed_/HTML/c.html" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
