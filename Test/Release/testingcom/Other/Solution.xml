@@ -3,7 +3,7 @@
   <SolutionManifest>
     <UniqueName>testingcom</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="testingcom" languagecode="1033" />
+      <LocalizedName description="Template" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0</Version>
@@ -77,7 +77,26 @@
         </Address>
       </Addresses>
     </Publisher>
-    <RootComponents />
-    <MissingDependencies />
+    <RootComponents>
+      <RootComponent type="1" schemaName="syed_sourcecontrolqueue" behavior="2" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" solution="Active" />
+        <Dependent key="0" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="1" type="61" schemaName="syed_/Images/DynamicsSourceControl-SVG" displayName="syed_/Images/DynamicsSourceControl-SVG" solution="Active" />
+        <Dependent key="0" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="61" schemaName="syed_/Images/DynamicsSourceControl" displayName="syed_/Images/DynamicsSourceControl" solution="Active" />
+        <Dependent key="0" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="61" schemaName="syed_/Images/DynamicsSourceControl-16" displayName="syed_/Images/DynamicsSourceControl-16" solution="Active" />
+        <Dependent key="0" type="1" schemaName="syed_sourcecontrolqueue" displayName="Dynamics Source Control" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
