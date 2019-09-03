@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <HideCustomAction HideActionId="syed.GuidedHelp.syed_mergesolutions.Form.Hide" Location="GuidedHelp.syed_mergesolutions.Form" />
+    <HideCustomAction HideActionId="syed.LPLibrary.syed_mergesolutions.Form.Hide" Location="LPLibrary.syed_mergesolutions.Form" />
+    <HideCustomAction HideActionId="syed.MailApp.Form.SetRegarding.syed_mergesolutions.Button.Hide" Location="MailApp.Form.SetRegarding.syed_mergesolutions.Button" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Activate.Hide" Location="Mscrm.Form.syed_mergesolutions.Activate" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.AddConnection.Hide" Location="Mscrm.Form.syed_mergesolutions.AddConnection" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.AddFile.Hide" Location="Mscrm.Form.syed_mergesolutions.AddFile" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.AddOtherActivities.Hide" Location="Mscrm.Form.syed_mergesolutions.AddOtherActivities" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.AddToQueue.Hide" Location="Mscrm.Form.syed_mergesolutions.AddToQueue" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Assign.Hide" Location="Mscrm.Form.syed_mergesolutions.Assign" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Convert.Case.Hide" Location="Mscrm.Form.syed_mergesolutions.Convert.Case" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Convert.Opportunity.Hide" Location="Mscrm.Form.syed_mergesolutions.Convert.Opportunity" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.CopySelected.Hide" Location="Mscrm.Form.syed_mergesolutions.CopySelected" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.CustomizeEntity.Hide" Location="Mscrm.Form.syed_mergesolutions.CustomizeEntity" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Deactivate.Hide" Location="Mscrm.Form.syed_mergesolutions.Deactivate" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.syed_mergesolutions.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.FollowButton.Hide" Location="Mscrm.Form.syed_mergesolutions.FollowButton" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.FollowButtonForYammer.Hide" Location="Mscrm.Form.syed_mergesolutions.FollowButtonForYammer" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.FormDesign.Hide" Location="Mscrm.Form.syed_mergesolutions.FormDesign" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.OpenActiveStage.Hide" Location="Mscrm.Form.syed_mergesolutions.OpenActiveStage" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Permissions.Grant.Hide" Location="Mscrm.Form.syed_mergesolutions.Permissions.Grant" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Permissions.Hide" Location="Mscrm.Form.syed_mergesolutions.Permissions" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Permissions.Sharing.Hide" Location="Mscrm.Form.syed_mergesolutions.Permissions.Sharing" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.PromoteToResponse.Hide" Location="Mscrm.Form.syed_mergesolutions.PromoteToResponse" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.PublishAll.Hide" Location="Mscrm.Form.syed_mergesolutions.PublishAll" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.PublishEntity.Hide" Location="Mscrm.Form.syed_mergesolutions.PublishEntity" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.QueueItemDetail.Hide" Location="Mscrm.Form.syed_mergesolutions.QueueItemDetail" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.Reports.Hide" Location="Mscrm.Form.syed_mergesolutions.Reports" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.RunScript.Hide" Location="Mscrm.Form.syed_mergesolutions.RunScript" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.RunWorkflow.Hide" Location="Mscrm.Form.syed_mergesolutions.RunWorkflow" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.SaveAsComplete.Hide" Location="Mscrm.Form.syed_mergesolutions.SaveAsComplete" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.SendSelected.Hide" Location="Mscrm.Form.syed_mergesolutions.SendSelected" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.SuggestProduct.Hide" Location="Mscrm.Form.syed_mergesolutions.SuggestProduct" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.UnfollowButton.Hide" Location="Mscrm.Form.syed_mergesolutions.UnfollowButton" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.ViewHierarchy.Hide" Location="Mscrm.Form.syed_mergesolutions.ViewHierarchy" />
+    <HideCustomAction HideActionId="syed.Mscrm.Form.syed_mergesolutions.WordTemplate.Hide" Location="Mscrm.Form.syed_mergesolutions.WordTemplate" />
+    <HideCustomAction HideActionId="syed.Mscrm.HomepageGrid.syed_mergesolutions.MBPF.ConvertTo.Hide" Location="Mscrm.HomepageGrid.syed_mergesolutions.MBPF.ConvertTo" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_mergesolutions.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.syed_mergesolutions.AddExistingAssoc" />
+    <HideCustomAction HideActionId="syed.Mscrm.SubGrid.syed_mergesolutions.AddExistingStandard.Hide" Location="Mscrm.SubGrid.syed_mergesolutions.AddExistingStandard" />
+    <HideCustomAction HideActionId="syed.msdyn.ApplicationRibbon.syed_mergesolutions.Form.BookResource.Button.Hide" Location="msdyn.ApplicationRibbon.syed_mergesolutions.Form.BookResource.Button" />
+    <CustomAction Id="syed.syed_mergesolutions.Back.Button.CustomAction" Location="Mscrm.Form.syed_mergesolutions.MainTab.Actions.Controls._children" Sequence="17">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:syed.syed_mergesolutions.Back.Button.Alt" Command="syed.syed_mergesolutions.Back.Command" Id="syed.syed_mergesolutions.Back.Button" Image32by32="$webresource:syed_/Images/Back-32" Image16by16="$webresource:syed_/Images/Back-16" LabelText="$LocLabels:syed.syed_mergesolutions.Back.Button.LabelText" Sequence="17" TemplateAlias="o2" ToolTipTitle="$LocLabels:syed.syed_mergesolutions.Back.Button.ToolTipTitle" ToolTipDescription="$LocLabels:syed.syed_mergesolutions.Back.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="syed.syed_mergesolutions.Back.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SYED.MergeSolution.EventHandler.Back" Library="$webresource:syed_/Scripts/MergeSoluitons/EventHandler">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="syed.syed_mergesolutions.Back.Button.Alt">
+      <Titles>
+        <Title description="Back" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.syed_mergesolutions.Back.Button.LabelText">
+      <Titles>
+        <Title description="Back" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.syed_mergesolutions.Back.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Back" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="syed.syed_mergesolutions.Back.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Back" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

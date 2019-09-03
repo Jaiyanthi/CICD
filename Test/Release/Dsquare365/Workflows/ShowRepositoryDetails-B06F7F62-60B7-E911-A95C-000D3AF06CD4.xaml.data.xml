@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{b06f7f62-60b7-e911-a95c-000d3af06cd4}" Name="Show Repository Details" Description="Click to add description">
+  <XamlFileName>/Workflows/ShowRepositoryDetails-B06F7F62-60B7-E911-A95C-000D3AF06CD4.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>syed_sourcecontrolqueue</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Show Repository Details" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{e1d8a1c8-19ce-e911-a812-000d3af05f57}">
+      <controltype>1</controltype>
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <controlname>syed_includeinrelease</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e2d8a1c8-19ce-e911-a812-000d3af05f57}">
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e3d8a1c8-19ce-e911-a812-000d3af05f57}">
+      <controltype>1</controltype>
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <controlname>syed_checkin</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e4d8a1c8-19ce-e911-a812-000d3af05f57}">
+      <formid>{be8f7d41-f3a0-466c-a09e-aaa15864d60c}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>syed_sourcecontrolqueue</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>
