@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{152ac362-2763-4bbd-bcda-2d26057ee2ff}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="syed_name" select="1" icon="1" preview="0">
+        <row id="syed_mastersolutionsid" name="syed_mastersolutions">
+          <cell name="syed_name" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="syed_listofsolutions" width="100" disableSorting="1" />
+          <cell name="syed_publisher" width="100" />
+          <cell name="syed_version" width="100" />
+          <cell name="syed_solutioninstalledon" width="100" />
+          <cell name="syed_ismanaged" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="false" output-format="xml-platform">
+        <entity name="syed_mastersolutions">
+          <attribute name="syed_mastersolutionsid" />
+          <attribute name="syed_name" />
+          <attribute name="syed_version" />
+          <attribute name="syed_ismanaged" />
+          <attribute name="syed_publisher" />
+          <attribute name="syed_listofsolutions" />
+          <attribute name="syed_solutioninstalledon" />
+          <order attribute="syed_publisher" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="syed_ismanaged" operator="eq" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="MasterSolution Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
