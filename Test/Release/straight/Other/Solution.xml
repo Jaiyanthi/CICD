@@ -80,6 +80,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="customeraddress" behavior="2" />
       <RootComponent type="60" id="{df5bef3a-9237-40bd-a27c-2cd7fd434706}" />
+      <RootComponent type="61" schemaName="syed_Jaiyanthi" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
