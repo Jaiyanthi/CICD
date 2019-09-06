@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{b12d6363-dafc-49d7-87d1-1e1cc73c728b}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{22a0e33c-1366-4357-b4ea-89d98ef806a2}" IsUserDefined="1" name="{22a0e33c-1366-4357-b4ea-89d98ef806a2}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{150377bb-0ad3-463e-b4f7-cf0c6c79a1f7}" height="auto">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{50fc7599-9bb2-4fd6-86b2-8a325a079f42}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4359e1a7-eeba-49ea-6216-1968ed4cd862}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Instance URL" languagecode="1033" />
+                        </labels>
+                        <control id="syed_instanceurl" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="syed_instanceurl" disabled="false" uniqueid="{20186548-5743-3e0e-a5a8-031a2e45779a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f83c5a0-6aaa-406b-9f5b-f06074ea40d8}">
+                        <labels>
+                          <label description="User Name" languagecode="1033" />
+                        </labels>
+                        <control id="syed_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bc8838e-3771-6437-901a-7c1832b4d745}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Password" languagecode="1033" />
+                        </labels>
+                        <control id="syed_password" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_password" disabled="false" uniqueid="{1624c798-5b80-05d2-9c22-c855849eed10}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{22a0e33c-1366-4357-b4ea-89d98ef806a2}_section_2" showlabel="false" showbar="false" locklevel="0" id="{4ab82a3d-91c4-1c74-ae40-b795660cea0e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{03d45e16-d1d7-29d8-3b5d-c328d4a348e3}" showlabel="false" colspan="1" auto="false" rowspan="2">
+                        <labels>
+                          <label description="Password" languagecode="1033" />
+                        </labels>
+                        <control id="WebResource_DeploymentInstance" classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}">
+                          <parameters>
+                            <Url>syed_/HTML/DeploymentInstance</Url>
+                            <PassParameters>true</PassParameters>
+                            <ShowOnMobileClient>false</ShowOnMobileClient>
+                            <Security>false</Security>
+                            <Scrolling>no</Scrolling>
+                            <Border>false</Border>
+                            <WebResourceId>{EE00B1F9-2D93-E911-A95F-000D3AF2C610}</WebResourceId>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event name="onload" application="false">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row />
+                    <row>
+                      <cell id="{534ccee8-2400-77ac-9312-87ce7c86974a}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dcee6bd6-7ed5-8e5a-cb03-1cc07964ec93}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
