@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" PluginAssemblyId="6f501261-1881-4ce9-a46b-56aa7e82a494" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/SolutionManagement-6F501261-1881-4CE9-A46B-56AA7E82A494/SolutionManagement.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="SolutionManagement.DynamicSourceControlOperations, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" PluginTypeId="f9786a07-913b-446c-849a-3eaaf51759e8" Name="SolutionManagement.DynamicSourceControlOperations">
+      <FriendlyName>c9b4043c-fbb5-48fd-b2d0-2fe11a947ffa</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="SolutionManagement.EncryptPassword, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" PluginTypeId="5a78e7cf-627d-4932-9f1b-ead80e3d1fee" Name="SolutionManagement.EncryptPassword">
+      <FriendlyName>97a01646-8e11-42f0-888e-8fe8e901b55d</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="SolutionManagement.SolutionManagement, SolutionManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f11dfbf3847307ca" PluginTypeId="c1c72de4-1c9d-4548-93de-dd2c64292cd8" Name="SolutionManagement.SolutionManagement">
+      <FriendlyName>b8295de3-cd5b-4514-a541-84d9675c1e00</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>
