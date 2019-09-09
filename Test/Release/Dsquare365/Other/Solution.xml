@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.1.0.8415" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.1.0.8616" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>Dsquare365</UniqueName>
     <LocalizedNames>
@@ -93,6 +93,7 @@
       <RootComponent type="29" id="{908bcb02-dda2-e911-a95a-000d3af06cd4}" behavior="0" />
       <RootComponent type="29" id="{b06f7f62-60b7-e911-a95c-000d3af06cd4}" behavior="0" />
       <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
+      <RootComponent type="60" id="{30c6195e-ef32-4dcb-8b13-cc8775ca1621}" behavior="0" />
       <RootComponent type="60" id="{41b7ee8a-72a4-e911-a979-000d3af0375c}" behavior="0" />
       <RootComponent type="60" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" behavior="0" />
       <RootComponent type="61" schemaName="syed_/HTML/DeploymentInstance" behavior="0" />
@@ -176,7 +177,7 @@
         <Dependent key="3" type="50" schemaName="syed_mergesolutions:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="7" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1908.4024)" />
+        <Required key="7" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.1908.4026)" />
         <Dependent key="8" type="60" displayName="Information" parentDisplayName="Source Control" id="{be8f7d41-f3a0-466c-a09e-aaa15864d60c}" />
       </MissingDependency>
       <MissingDependency>

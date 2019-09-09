@@ -123,13 +123,31 @@
                         </labels>
                         <control disabled="true" id="syed_friendlyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_friendlyname" uniqueid="{2639467d-9bc1-6103-2c29-d58472b9bdc0}" />
                       </cell>
+                      <cell id="{d25a6e44-ed82-bca3-12cc-0bbc2639866b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="New Version" languagecode="1033" />
+                        </labels>
+                        <control id="syed_newversion" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="syed_newversion" disabled="false" uniqueid="{ad1a6295-6674-745a-4a33-46bb264eed34}" />
+                      </cell>
+                      <cell id="{7441d837-2d54-d22c-1a9e-05084c150dbd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{e597b44d-6b43-e04c-9426-10e9d6581293}" showlabel="true" locklevel="1">
                         <labels>
                           <label description="Installed On" languagecode="1033" />
                         </labels>
                         <control disabled="true" id="syed_solutioninstalledon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="syed_solutioninstalledon" uniqueid="{254c50d3-0772-dbab-7be8-c965143867e4}" />
                       </cell>
-                      <cell id="{7441d837-2d54-d22c-1a9e-05084c150dbd}" showlabel="false">
+                      <cell id="{2c20e051-9c08-b125-d819-ad24797c3cdd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{09b5ea3b-d2db-597e-aa94-890145117c09}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
