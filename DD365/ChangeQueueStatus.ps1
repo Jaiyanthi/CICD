@@ -20,7 +20,11 @@
 
 
 
-
+Write-Output $crmServiceUrl
+Write-Output $UserName
+Write-Output $Password,
+Write-Output $EntityRecordId,
+Write-Output $Status
 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 
