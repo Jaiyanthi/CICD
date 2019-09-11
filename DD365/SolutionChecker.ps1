@@ -68,7 +68,7 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                              $DFSFolders = get-childitem -path $rootPath -filter *.zip |select-object name
 
                                Write-Output 'Loop through folders in Directory'
-                                Write-Output DFSFolders
+                                Write-Output $DFSfolders
                                 
                               foreach ($DFSfolder in $DFSfolders)
                                 {
