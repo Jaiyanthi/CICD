@@ -18,12 +18,6 @@
 
                                 )
 
-                                
-
-
-
-
-
 $Secure2 = ConvertTo-SecureString -String $ClientApplicationSecret -AsPlainText -Force
 
 Write-Output $clientAppId
@@ -34,13 +28,11 @@ Write-Output $resultOutputDirectory
 
 Write-Output $Secure2
 
+Write-Output $rootPath
 
-
-                                $ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering SolutionChecker.ps1'
-
-
 
 if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
 
@@ -65,7 +57,6 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                                 }
 
                                 if (-not([string]::IsNullOrEmpty($clientAppId)) -and -not([string]::IsNullOrEmpty($tenantId)) -and -not([string]::IsNullOrEmpty($rootPath)) -and -not([string]::IsNullOrEmpty($resultOutputDirectory)))
-
                                 {
 
                                 $ruleSet = Get-PowerAppsCheckerRulesets -Geography India
@@ -74,18 +65,13 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
 
                                 Write-Output('Started analysing solution results')
 
-                                
-
-                                
-
                              $DFSFolders = get-childitem -path $rootPath -filter *.zip |select-object name
 
                                Write-Output 'Loop through folders in Directory'
-
+                                Write-Output DFSFolders
+                                
                               foreach ($DFSfolder in $DFSfolders)
-
                                 {
-
                                 Write-Output $DFSfolder.Name
 
                                 $DFSfolder = Join-Path -Path "$rootPath" -ChildPath $DFSfolder.Name
