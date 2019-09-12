@@ -71,6 +71,7 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                                 $result = Invoke-PowerAppsChecker -ClientApplicationId $clientAppId -FileUnderAnalysis $DFSfolder -OutputDirectory $resultOutputDirectory -Ruleset $ruleSetToUse -TenantId $tenantId -ClientApplicationSecret $Secure2 -Verbose 
                                 Write-Output 'result is : '
                                 Write-Output($result)
+                                Write-Output($result.ResultFileUris)
                                 Write-Output($result.IssueSummary)
                                 }
                                 
