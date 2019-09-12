@@ -3,10 +3,7 @@
 # Filename: SolutionChecker.ps1.
 
 #
-
-
-
-                           Param([string] $clientAppId,
+                     Param([string] $clientAppId,
 
                                 [string] $tenantId,                               
 
@@ -35,7 +32,6 @@ $ErrorActionPreference = "Stop"
 Write-Verbose 'Entering SolutionChecker.ps1'
 
 if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
-
                                 {
 
                                 Write - Output 'Microsoft.PowerApps.Checker.PowerShell Module exists'
@@ -65,9 +61,9 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
 
                                 Write-Output('Started analysing solution results')
 
-                             $DFSFolders = get-childitem -path $rootPath -filter *.zip |select-object name
+                                $DFSFolders = get-childitem -path $rootPath -filter *.zip |select-object name
 
-                               Write-Output 'Loop through folders in Directory'
+                                Write-Output 'Loop through folders in Directory'
                                                          
                               foreach ($DFSfolder in $DFSfolders)
                                 {
