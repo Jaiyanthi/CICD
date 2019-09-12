@@ -9,13 +9,15 @@
                                 [string]  $UserName,
                                 [string]  $Password,
                                 [string]  $Status,
-                                [string]  $EntityRecordId                             
+                                [string]  $EntityRecordId,
+                                [string]  $resultFileUrls  
                                 )
 Write-Output $crmServiceUrl
 Write-Output $UserName
 Write-Output $Password,
 Write-Output $EntityRecordId,
 Write-Output $Status
+Write-Output $resultFileUrls 
 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 
@@ -90,7 +92,8 @@ Write-Output  $response   #{955715C8-79D4-E911-A812-000D3A0A7552}
     $entity.Attributes["syed_status"] =$Status;#"Build Completed";
 
     #$entity.Attributes["syed_status"] ="Release Completed";
-
+    
+    $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;#"Build Completed";
  
 
     #Write-Output ('Updating "{0}" (Id = {1})...' -f $_.name, $entity.Id)
