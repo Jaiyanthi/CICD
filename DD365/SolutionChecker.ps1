@@ -71,9 +71,12 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                                 $result = Invoke-PowerAppsChecker -ClientApplicationId $clientAppId -FileUnderAnalysis $DFSfolder -OutputDirectory $resultOutputDirectory -Ruleset $ruleSetToUse -TenantId $tenantId -ClientApplicationSecret $Secure2 -Verbose 
                                 Write-Output 'result is : '
                                 Write-Output($result)
+                                $FileUrls +=  $result.ResultFileUris + ";"
                                 Write-Output($result.ResultFileUris)
                                 Write-Output($result.IssueSummary)
                                 }
+                                $FileUrls = $FileUrls -replace ';', "%0D%0A"
+                                Write-Host "##vso[task.setvariable variable=resultFileUrls]$FileUrls"
                                 
                                 }
                                 else
