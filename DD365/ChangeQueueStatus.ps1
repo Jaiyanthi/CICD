@@ -9,30 +9,22 @@
                                 [string]  $UserName,
                                 [string]  $Password,
                                 [string]  $Status,
-                                [string]  $EntityRecordId,
-                                [string]  $resultFileUrls  
+                                [string]  $resultFileUrls,
+                                [string]  $EntityRecordId
+                               
                                 )
 Write-Output $crmServiceUrl
 Write-Output $UserName
 Write-Output $Password,
-Write-Output $EntityRecordId,
 Write-Output $Status
 Write-Output $resultFileUrls 
+Write-Output $EntityRecordId,
 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
-
 {
-
-
-
 Import-Module $env:DOWNLOADSECUREFILE1_SECUREFILEPATH
-
-
-
 Import-Module $env:DOWNLOADSECUREFILE2_SECUREFILEPATH
-
 }
-
 [void][System.Reflection.Assembly]::LoadWithPartialName("system.servicemodel")
 
 $clientCredentials = new-object System.ServiceModel.Description.ClientCredentials
