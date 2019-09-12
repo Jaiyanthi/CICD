@@ -35,14 +35,6 @@ Import-Module $env:DOWNLOADSECUREFILE2_SECUREFILEPATH
 
 [void][System.Reflection.Assembly]::LoadWithPartialName("system.servicemodel")
 
-
-
-
-
-
-
-#$crmServiceUrl = "https://testdel.api.crm8.dynamics.com/XRMServices/2011/Organization.svc"
-
 $clientCredentials = new-object System.ServiceModel.Description.ClientCredentials
 
 $clientCredentials.UserName.UserName =  $UserName
@@ -53,19 +45,13 @@ $service = new-object Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy($crmServ
 
 $service.Timeout = new-object System.Timespan(0, 10, 0);
 
-
-
 $request = new-object Microsoft.Crm.Sdk.Messages.WhoAmIRequest
 
 $service.Execute($request)
 
-
-
 $query = new-object Microsoft.Xrm.Sdk.Query.QueryExpression("syed_sourcecontrolqueue")
 
 $query.ColumnSet = new-object Microsoft.Xrm.Sdk.Query.ColumnSet($true)
-
- 
 
 # RetrieveMultiple returns a maximum of 5000 records by default. 
 
@@ -73,17 +59,9 @@ $query.ColumnSet = new-object Microsoft.Xrm.Sdk.Query.ColumnSet($true)
 
 $response = $service.RetrieveMultiple($query)
 
-
-
 Write-Output  $response   #{955715C8-79D4-E911-A812-000D3A0A7552}
 
-
-
 ## need to chane the status for record build com0-lete , release compoleted
-
-
-
-
 
     $entity = New-Object Microsoft.Xrm.Sdk.Entity("syed_sourcecontrolqueue")
 
@@ -93,10 +71,8 @@ Write-Output  $response   #{955715C8-79D4-E911-A812-000D3A0A7552}
 
     #$entity.Attributes["syed_status"] ="Release Completed";
     
-    $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;#"Build Completed";
+    $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;
  
-
     #Write-Output ('Updating "{0}" (Id = {1})...' -f $_.name, $entity.Id)
 
     $service.Update($entity)
-
