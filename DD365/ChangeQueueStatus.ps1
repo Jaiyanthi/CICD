@@ -5,21 +5,12 @@
 
 
                             Param(
-
-                                [string] $crmServiceUrl,                               
-
+                                [string] $crmServiceUrl,                            
                                 [string]  $UserName,
-
                                 [string]  $Password,
-
-                                [string]  $EntityRecordId,
-
-                                [string]  $Status
-
+                                [string]  $Status,
+                                [string]  $EntityRecordId                             
                                 )
-
-
-
 Write-Output $crmServiceUrl
 Write-Output $UserName
 Write-Output $Password,
