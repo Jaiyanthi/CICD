@@ -67,8 +67,6 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                                                          
                               foreach ($DFSfolder in $DFSfolders)
                                 {
-                                Write-Output $DFSfolder.Name
-
                                 $DFSfolder = Join-Path -Path "$rootPath" -ChildPath $DFSfolder.Name
                                 $result = Invoke-PowerAppsChecker -ClientApplicationId $clientAppId -FileUnderAnalysis $DFSfolder -OutputDirectory $resultOutputDirectory -Ruleset $ruleSetToUse -TenantId $tenantId -ClientApplicationSecret $Secure2 -Verbose 
                                 Write-Output 'result is : '
