@@ -68,18 +68,15 @@ if (Get-Module -ListAvailable -Name Microsoft.PowerApps.Checker.PowerShell)
                              $DFSFolders = get-childitem -path $rootPath -filter *.zip |select-object name
 
                                Write-Output 'Loop through folders in Directory'
-                                Write-Output $DFSfolders
-                                
+                                                         
                               foreach ($DFSfolder in $DFSfolders)
                                 {
                                 Write-Output $DFSfolder.Name
 
                                 $DFSfolder = Join-Path -Path "$rootPath" -ChildPath $DFSfolder.Name
-
-                                  $result = Invoke-PowerAppsChecker -ClientApplicationId $clientAppId -FileUnderAnalysis $DFSfolder -OutputDirectory $resultOutputDirectory -Ruleset $ruleSetToUse -TenantId $tenantId -ClientApplicationSecret $Secure2 -Verbose 
+                                $result = Invoke-PowerAppsChecker -ClientApplicationId $clientAppId -FileUnderAnalysis $DFSfolder -OutputDirectory $resultOutputDirectory -Ruleset $ruleSetToUse -TenantId $tenantId -ClientApplicationSecret $Secure2 -Verbose 
                                 Write-Output 'result is : '
                                 Write-Output($result)
-
                                 Write-Output($result.IssueSummary)
                                 }
                                 
