@@ -10,6 +10,8 @@
                                 [string]  $Password,
                                 [string]  $Status,
                                 [string]  $resultFileUrls,
+                                tring]  $buildurl,
+                                tring]  $releaseurl,
                                 [string]  $EntityRecordId
                                
                                 )
@@ -18,7 +20,10 @@ Write-Output $UserName
 Write-Output $Password
 Write-Output $Status
 Write-Output $resultFileUrls 
+Write-Output $buildurl
+Write-Output $releaseurl
 Write-Output $EntityRecordId
+
 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
@@ -59,12 +64,24 @@ Write-Output  $response   #{955715C8-79D4-E911-A812-000D3A0A7552}
 
     $entity.Id = $EntityRecordId; #"955715C8-79D4-E911-A812-000D3A0A7552"
 
-    $entity.Attributes["syed_status"] =$Status;#"Build Completed";
-
-    #$entity.Attributes["syed_status"] ="Release Completed";
+    if (-not([string]::IsNullOrEmpty($Status)))
+      {
+      $entity.Attributes["syed_status"] =$Status;
+     }
     
-    $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;
- 
+    if (-not([string]::IsNullOrEmpty($resultFileUrls)))
+      {
+      $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;
+     }
+    if (-not([string]::IsNullOrEmpty($buildurl)))
+      {
+      $entity.Attributes["syed_devopsbuildurl"] =$buildurl;
+     }
+    if (-not([string]::IsNullOrEmpty($releaseurl)))
+      {
+      $entity.Attributes["syed_devopsreleaseurl"] =$releaseurl;
+     }
+     
     #Write-Output ('Updating "{0}" (Id = {1})...' -f $_.name, $entity.Id)
 
     $service.Update($entity)
