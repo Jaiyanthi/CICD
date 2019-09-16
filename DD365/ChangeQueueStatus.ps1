@@ -10,8 +10,8 @@
                                 [string]  $Password,
                                 [string]  $Status,
                                 [string]  $resultFileUrls,
-                                tring]  $buildurl,
-                                tring]  $releaseurl,
+                               [string]  $buildurl,
+                                [string]  $releaseurl,
                                 [string]  $EntityRecordId
                                
                                 )
