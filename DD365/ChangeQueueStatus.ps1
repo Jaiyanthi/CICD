@@ -10,8 +10,8 @@
                                 [string]  $Password,
                                 [string]  $Status,
                                 [string]  $resultFileUrls,
-                               [string]  $buildurl,
-                                [string]  $releaseurl,
+                               #[string]  $buildurl,
+                                #[string]  $releaseurl,
                                 [string]  $EntityRecordId
                                
                                 )
@@ -20,8 +20,8 @@ Write-Output $UserName
 Write-Output $Password
 Write-Output $Status
 Write-Output $resultFileUrls 
-Write-Output $buildurl
-Write-Output $releaseurl
+#Write-Output $buildurl
+#Write-Output $releaseurl
 Write-Output $EntityRecordId
 
 
@@ -73,14 +73,7 @@ Write-Output  $response   #{955715C8-79D4-E911-A812-000D3A0A7552}
       {
       $entity.Attributes["syed_solutionchecker"] =$resultFileUrls;
      }
-    if (-not([string]::IsNullOrEmpty($buildurl)))
-      {
-      $entity.Attributes["syed_devopsbuildurl"] =$buildurl;
-     }
-    if (-not([string]::IsNullOrEmpty($releaseurl)))
-      {
-      $entity.Attributes["syed_devopsreleaseurl"] =$releaseurl;
-     }
+    
      
     #Write-Output ('Updating "{0}" (Id = {1})...' -f $_.name, $entity.Id)
 
