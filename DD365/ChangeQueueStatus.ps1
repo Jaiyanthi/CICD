@@ -15,14 +15,14 @@
                                 [string]  $EntityRecordId
                                
                                 )
-Write-Output $crmServiceUrl
-Write-Output $UserName
-Write-Output $Password
-Write-Output $Status
-Write-Output $resultFileUrls 
-Write-Output $buildurl
-Write-Output $releaseurl
-Write-Output $EntityRecordId
+Write-Output "crmServiceUrl :" $crmServiceUrl
+Write-Output "UserName :"$UserName
+Write-Output "Password :"$Password
+Write-Output "Status :"$Status
+Write-Output "resultFileUrls :"$resultFileUrls 
+Write-Output "buildurl :"$buildurl
+Write-Output "releaseurl :"$releaseurl
+Write-Output "EntityRecordId :"$EntityRecordId
 
 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
