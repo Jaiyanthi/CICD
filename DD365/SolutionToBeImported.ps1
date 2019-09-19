@@ -1,4 +1,4 @@
-#
+﻿#
 # Filename: SolutionToBeImported.ps1.
 #
 param(
@@ -15,9 +15,6 @@ $dynamicsSourceControlId +=  "$sourceControlId" + ";"
 
 $newlineDelimited = $solutionFileName -replace ';', "%0D%0A"
 $newlineDelimitedConfigValue = $dynamicsSourceControlId -replace ';', "%0D%0A"
-
-Write-Output $newlineDelimited
-Write-Output $newlineDelimitedConfigValue
 
 Write-Host "##vso[task.setvariable variable=SolutionsFileName]$newlineDelimited"
 Write-Host "##vso[task.setvariable variable=ConfigIds]$newlineDelimitedConfigValue"
