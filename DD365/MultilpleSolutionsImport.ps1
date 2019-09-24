@@ -21,25 +21,19 @@ $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
-
-$path1=-Join($dllPath,"Microsoft.Xrm.Sdk.dll")
-$path2=-Join($dllPath,"Microsoft.Crm.Sdk.Proxy.dll")
-$path3=-Join($dllPath,"Microsoft.IdentityModel.Clients.ActiveDirectory.dll")
-$path4=-Join($dllPath,"Microsoft.Xrm.Sdk.Deployment.dll")
-$path5=-Join($dllPath,"Microsoft.Xrm.Tooling.Connector.dll")
-$path6=-Join($dllPath,"Xrm.Framework.CI.PowerShell.Cmdlets.dll")
-$path7=-Join($dllPath,"Xrm.Framework.CI.Common.dll")
- Write-Output $path1
+ 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
 
-[void][System.Reflection.Assembly]::LoadFile($path1)
-[void][System.Reflection.Assembly]::LoadFile($path2)
-[void][System.Reflection.Assembly]::LoadFile($path3)
-[void][System.Reflection.Assembly]::LoadFile($path4)
-[void][System.Reflection.Assembly]::LoadFile($path5)
-[void][System.Reflection.Assembly]::LoadFile($path6)
-[void][System.Reflection.Assembly]::LoadFile($path7)
+   $dllNames = get-childitem -path $dllPath, -filter *.dll |select-object name
+ 
+    foreach ($dll in $dllNames)
+    {
+    $dllFilepath = Join-Path -Path "$dllPath" -ChildPath $dll.Name
+    Write-Output $dllFilepath
+    [void][System.Reflection.Assembly]::LoadFile($dllFilepath)
+    }
+  
 }
 
 Write-Host $solutionImportPath
