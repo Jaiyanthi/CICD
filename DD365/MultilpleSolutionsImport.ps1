@@ -25,11 +25,10 @@ Write-Output "Start Multiple solution import..."
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
 
-   $dllNames = get-childitem -path "$dllPath" |select-object name
+   $dllNames = get-childitem -path "$dllPath" |select-object FullName
  
-    foreach ($dll in $dllNames)
+    foreach ($dllFilepath in $dllNames)
     {
-    $dllFilepath = Join-Path -Path "$dllPath" -ChildPath $dll.Name
     Write-Output $dllFilepath
     [void][System.Reflection.Assembly]::LoadFile($dllFilepath)
     }
