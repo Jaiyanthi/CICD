@@ -9,6 +9,7 @@
                                 [string]  $UserName,
                                 [string]  $Password,
                                 [string]  $Status,
+                                [string]  $dllPath,
                                 [string]  $resultFileUrls,
                                 [string]  $buildurl,
                                 [string]  $releaseurl,
@@ -32,9 +33,11 @@ Write-Output "EntityRecordId :"$EntityRecordId
 
 #Import-Module $env:DOWNLOADSECUREFILE4_SECUREFILEPATH
 #}
+$path1=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.dll"
+$path2=Join-Path -Path $dllPath -ChildPath "Microsoft.Crm.Sdk.Proxy.dll"
 
-[void][System.Reflection.Assembly]::LoadFile("DD365/AssemblyStorage/Microsoft.Xrm.Sdk.dll")
-[void][System.Reflection.Assembly]::LoadFile("DD365/AssemblyStorage/Microsoft.Crm.Sdk.Proxy.dll")
+[void][System.Reflection.Assembly]::LoadFile($path1)
+[void][System.Reflection.Assembly]::LoadFile($path2)
 [void][System.Reflection.Assembly]::LoadWithPartialName("system.servicemodel")
 
 $clientCredentials = new-object System.ServiceModel.Description.ClientCredentials
