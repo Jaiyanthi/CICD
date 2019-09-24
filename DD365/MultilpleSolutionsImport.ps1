@@ -21,10 +21,10 @@ $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
-Write-Output $solutionImportPath,
+Write-Output $solutionImportPath
+Write-Output $dllPath
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
-
    $dllNames = get-childitem -path $dllPath |select-object FullName
   Write-Output $dllNames
   foreach ($dllFilepath in $dllNames)
@@ -32,8 +32,7 @@ if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
     Write-Output $dllFilepath
     [void][System.Reflection.Assembly]::LoadFile($dllFilepath)
     }
-  
-}
+  }
 
 Write-Host $solutionImportPath
 Write-Host $solution
