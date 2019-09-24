@@ -20,7 +20,7 @@ $logFilename
 $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
-
+Write-Output "Start Multiple solution import..."
 $path1=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.dll"
 $path2=Join-Path -Path $dllPath -ChildPath "Microsoft.Crm.Sdk.Proxy.dll"
 $path3=Join-Path -Path $dllPath -ChildPath "Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
