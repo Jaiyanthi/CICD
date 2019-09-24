@@ -20,7 +20,7 @@ $logFilename
 $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
- Write-Output $dllPath
+
 $path1=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.dll"
 $path2=Join-Path -Path $dllPath -ChildPath "Microsoft.Crm.Sdk.Proxy.dll"
 $path3=Join-Path -Path $dllPath -ChildPath "Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
@@ -28,13 +28,10 @@ $path4=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.Deployment.dll"
 $path5=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Tooling.Connector.dll"
 $path6=Join-Path -Path $dllPath -ChildPath "Xrm.Framework.CI.PowerShell.Cmdlets.dll"
 $path7=Join-Path -Path $dllPath -ChildPath "Xrm.Framework.CI.Common.dll"
-
-Write-Output $path1
-
+ 
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
-
-
+Write-Output $path1
 [void][System.Reflection.Assembly]::LoadFile($path1)
 [void][System.Reflection.Assembly]::LoadFile($path2)
 [void][System.Reflection.Assembly]::LoadFile($path3)
