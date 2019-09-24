@@ -21,17 +21,6 @@ $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
  
-#if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
-#{
-#Import-Module $env:DOWNLOADSECUREFILE1_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE2_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE3_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE4_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE5_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE6_SECUREFILEPATH
-#Import-Module $env:DOWNLOADSECUREFILE7_SECUREFILEPATH
-#}
-
 $path1=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.dll"
 $path2=Join-Path -Path $dllPath -ChildPath "Microsoft.Crm.Sdk.Proxy.dll"
 $path3=Join-Path -Path $dllPath -ChildPath "Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
