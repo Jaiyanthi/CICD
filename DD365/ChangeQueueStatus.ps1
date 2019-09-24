@@ -25,11 +25,16 @@ Write-Output "releaseurl :"$releaseurl
 Write-Output "EntityRecordId :"$EntityRecordId
 
 
-if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
-{
-Import-Module $env:DOWNLOADSECUREFILE1_SECUREFILEPATH
-Import-Module $env:DOWNLOADSECUREFILE2_SECUREFILEPATH
-}
+#if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
+#{
+
+#Import-Module $env:DOWNLOADSECUREFILE1_SECUREFILEPATH
+
+#Import-Module $env:DOWNLOADSECUREFILE4_SECUREFILEPATH
+#}
+
+[void][System.Reflection.Assembly]::LoadFile("DD365/AssemblyStorage/Microsoft.Xrm.Sdk.dll")
+[void][System.Reflection.Assembly]::LoadFile("DD365/AssemblyStorage/Microsoft.Crm.Sdk.Proxy.dll")
 [void][System.Reflection.Assembly]::LoadWithPartialName("system.servicemodel")
 
 $clientCredentials = new-object System.ServiceModel.Description.ClientCredentials
