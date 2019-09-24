@@ -33,8 +33,11 @@ Write-Output "EntityRecordId :"$EntityRecordId
 
 #Import-Module $env:DOWNLOADSECUREFILE4_SECUREFILEPATH
 #}
-$path1=Join-Path -Path $dllPath -ChildPath "Microsoft.Xrm.Sdk.dll"
-$path2=Join-Path -Path $dllPath -ChildPath "Microsoft.Crm.Sdk.Proxy.dll"
+$path1=Join-Path -Path $dllPath -ChildPath Microsoft.Xrm.Sdk.dll
+$path2=Join-Path -Path $dllPath -ChildPath Microsoft.Crm.Sdk.Proxy.dll
+
+Write-Output $path1
+Write-Output $path2
 
 [void][System.Reflection.Assembly]::LoadFile($path1)
 [void][System.Reflection.Assembly]::LoadFile($path2)
