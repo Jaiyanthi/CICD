@@ -25,12 +25,12 @@ Write-Output "Start Multiple solution import..."
  $dllnames = get-childitem $dllPath
  write-Output $dllnames
 
+ 
+
   foreach ($dllname in $dllnames)
     {
-    $dllFullpath=-join($dllPath,'/')
-    $dllFullpath=-join($dllFullpath,$dllname)
-    Write-Output $dllFullpath
-    [void][System.Reflection.Assembly]::LoadFile($dllFullpath)
+    Write-Output $dllname
+    [void][System.Reflection.Assembly]::LoadFile($dllname)
     }
  
 
