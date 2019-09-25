@@ -22,7 +22,7 @@ $ErrorActionPreference = "Stop"
 Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
  
- $Dir = get-childitem $dllPath | select-object fullname
+ $Dir = get-childitem $dllPath
  write-Output $Dir
 
 Write-Host $solutionImportPath
