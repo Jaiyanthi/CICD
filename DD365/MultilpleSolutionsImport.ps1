@@ -27,7 +27,7 @@ Write-Output "Start Multiple solution import..."
 
   foreach ($dllname in $dllnames)
     {
-    $dllFullpath=-join($dllPath,'\')
+    $dllFullpath=-join($dllPath,'/')
     $dllFullpath=-join($dllFullpath,$dllname)
     Write-Output $dllFullpath
     [void][System.Reflection.Assembly]::LoadFile($dllFullpath)
