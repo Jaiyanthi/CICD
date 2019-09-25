@@ -23,7 +23,7 @@ Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
 Write-Output $solutionImportPath
 Write-Output $dllPath
-$dllPath=".\AssemblyStorage"
+$dllPath=".\_CMR Solution-CI1\drop\AssemblyStorage"
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
    $dllNames = get-childitem -path $dllPath |select-object FullName
