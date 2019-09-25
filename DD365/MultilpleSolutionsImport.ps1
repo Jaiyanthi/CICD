@@ -21,6 +21,7 @@ $ErrorActionPreference = "Stop"
 
 Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
+Write-output $solutionImportPath
 Write-Output $dllPath
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
