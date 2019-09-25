@@ -25,13 +25,15 @@ Write-output $solutionImportPath
 Write-Output $dllPath
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
-  $dllNames = Get-Childitem $dllPath |select-object fullname
+  #$dllNames = Get-Childitem $dllPath |select-object fullname
+  $dllNamesList= $dllPath | where {$_.extension -eq ".dll"} |select-object fullname
+  
   Write-Output "Path is :"
-  Write-Output $dllNames
-  foreach ($dllFilepath in $dllNames)
+  Write-Output $dllNamesList
+  foreach ($dllFile in $dllNamesList)
     {
-    Write-Output $dllFilepath
-    [void][System.Reflection.Assembly]::LoadFile($dllFilepath)
+    Write-Output $dllFile
+    [void][System.Reflection.Assembly]::LoadFile($dllFile)
     }
   }
 
