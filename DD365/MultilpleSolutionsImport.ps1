@@ -26,6 +26,7 @@ Write-Output $dllPath
 if(-Not (Get-Module -ListAvailable -Name Xrm.Framework.CI.PowerShell.Cmdlets))
 {
   $dllNames = Get-Childitem $dllPath -filter *.dll |select-object fullname
+  Write-Output "Path is :"
   Write-Output $dllNames
   foreach ($dllFilepath in $dllNames)
     {
