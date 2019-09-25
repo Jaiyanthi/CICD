@@ -22,8 +22,16 @@ $ErrorActionPreference = "Stop"
 Write-Verbose 'Entering ImportSolution.ps1'
 Write-Output "Start Multiple solution import..."
  
- $Dir = get-childitem $dllPath
- write-Output $Dir
+ $dllnames = get-childitem $dllPath
+ write-Output $dllnames
+
+  foreach ($dllname in $dllnames)
+    {
+    $dllpath=-join($dllPath,$dllname)
+    Write-Output $dllpath
+    [void][System.Reflection.Assembly]::LoadFile($dllpath)
+    }
+ 
 
 Write-Host $solutionImportPath
 Write-Host $solution
