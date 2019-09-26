@@ -32,25 +32,25 @@ Write-Output "Start Multiple solution import..."
     $dllname=-Join($dllPath,"/Microsoft.Xrm.Sdk.dll")
     write-Output $dllname
     #Add-Type -Path $dllname
-    [void][System.Reflection.Assembly]::Load($dllname)
+    [void][System.Reflection.Assembly]::LoadFile($dllname)
     
      $dllname=-Join($dllPath,"/Microsoft.Crm.Sdk.Proxy.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)     
+     [void][System.Reflection.Assembly]::LoadFile($dllname)     
      
       $dllname=-Join($dllPath,"/Microsoft.IdentityModel.Clients.ActiveDirectory.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)
+     [void][System.Reflection.Assembly]::LoadFile($dllname)
      
      $dllname=-Join($dllPath,"/Microsoft.Xrm.Sdk.Deployment.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)
+     [void][System.Reflection.Assembly]::LoadFile($dllname)
      
      $dllname=-Join($dllPath,"/Microsoft.Xrm.Tooling.Connector.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)
+     [void][System.Reflection.Assembly]::LoadFile($dllname)
      
      $dllname=-Join($dllPath,"/Xrm.Framework.CI.Common.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)
+     [void][System.Reflection.Assembly]::LoadFile($dllname)
      
      $dllname=-Join($dllPath,"/Xrm.Framework.CI.PowerShell.Cmdlets.dll")
-     [void][System.Reflection.Assembly]::Load($dllname)
+     [void][System.Reflection.Assembly]::LoadFile($dllname)
  }
 
 Write-Host $solutionImportPath
