@@ -32,8 +32,9 @@ Write-Output "Start Multiple solution import..."
   foreach ($dllname in $dllnames)
     {
     Write-Output $dllname
-    #$dllname=Join-Path -Path $dllPath -ChildPath $dllname
-    [void][System.Reflection.Assembly]::loadwithpartialname($dllname)
+    $dllname=Join-Path -Path $dllPath -ChildPath $dllname
+    Add-Type -Path $dllname
+    [void][System.Reflection.Assembly]::Load($dllname)
     }
  }
 
